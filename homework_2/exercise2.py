@@ -1,10 +1,9 @@
 x = int(input('Первое загаданное число: '))
 y = int(input('Второе загаданное число: '))
-if x > 1000 or y > 1000:
-    print('Одно из чисел больше 1000')
-else:
-    s = x + y # Сумма эти чисел
-    p = x * y # Произведение этих чисел
+for A in range(x):
+    for B in range(y):
+        if x == A + B and y == A * B:
+            print(A, B)
 
 
 
